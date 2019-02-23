@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/HyundaiSans/stylesheet.css">
 
+    <link rel="stylesheet" href="css/lightslider.css">
 
     <link rel="stylesheet" href="css/build.css">
 
@@ -16,7 +17,7 @@
 <body>
 <section class="product-section pt-30">
     <div class="container">
-        <div class="row">
+        <div class="row item-row">
 
             <div class="col-12 col-lg-11 offset-lg-1">
                 <div class="breadcrumbs">
@@ -30,14 +31,199 @@
                     Hyundai Tucson Family
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-5 offset-lg-1">1</div>
-            <div class="col-12 col-md-6 col-lg-5 ">2</div>
-            <div class="col-12 col-lg-10 mx-auto">3</div>
+            <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+                <div>
+                    <ul id="lightSlider">
+                        <li data-thumb="assets/tucson-item-slider.png">
+                            <img src="assets/tucson-item-slider.png"/>
+                        </li>
+                        <li data-thumb="assets/tucson-item-slider.png">
+                            <img src="assets/tucson-item-slider.png"/>
+                        </li>
+                        <li data-thumb="assets/tucson-item-slider.png">
+                            <img src="assets/tucson-item-slider.png"/>
+                        </li>
+                        <li data-thumb="assets/tucson-item-slider.png">
+                            <img src="assets/tucson-item-slider.png"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 ">
+                <div class="item">
+                    <div class="price">
+                        <div>от <span>1 334 000 ₽</span></div>
+                        <div>В кредит от 18 000 ₽/мес.</div>
+                    </div>
+                    <div class="item__char">
+                        <div class="item__char--row">
+                            <div class="img"><img src="assets/icon-petrol.png" alt=""></div>
+                            <div>Тип топлива</div>
+                            <div class="split"></div>
+                            <div>Бензин 95</div>
+                        </div>
+                        <div class="item__char--row">
+                            <div class="img"><img src="assets/icon-engine.png" alt=""></div>
+                            <div>Двигатель</div>
+                            <div class="split"></div>
+                            <div>2 л / 150 л. с.</div>
+                        </div>
+                        <div class="item__char--row">
+                            <div class="img"><img src="assets/icon-mech.png" alt=""></div>
+                            <div>Коробка</div>
+                            <div class="split"></div>
+                            <div>АКПП-6</div>
+                        </div>
+                        <div class="item__char--row">
+                            <div class="img"><img src="assets/icon-wheels.png" alt=""></div>
+                            <div>Привод</div>
+                            <div class="split"></div>
+                            <div>Полный</div>
+                        </div>
+                        <div class="item__char--row">
+                            <div class="img"><img src="assets/icon-petrolst.png" alt=""></div>
+                            <div>Расход</div>
+                            <div class="split"></div>
+                            <div>11,2 город / 6,2 трасса</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-10 mx-auto">
+                <div class="app">
+                    <div class="label">
+                        Записаться на тест драйв
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="+7(___)___-__-__" data-inputmask="'mask':'+7(999)999-99-99'">
+                    </div>
+                    <div class="form-btn">
+                        <button class="btn-blue">Записаться</button>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <div class="description__nav">
+                        <a href="#d1" data-toggle="collapse" aria-expanded="true">характеристики</a>
+                        <a href="#d2" data-toggle="collapse" aria-expanded="false">комплектация</a>
+                    </div>
+                    <div class="description__item">
+                        <div id="d1" class="collapse show" data-parent=".description">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 px-0">
+                                        <div class="description--row">
+                                            <div>Тип топлива</div>
+                                            <div></div>
+                                            <div>Бензин 95</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Двигатель</div>
+                                            <div></div>
+                                            <div>2 л / 150 л. с.</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Коробка</div>
+                                            <div></div>
+                                            <div>АКПП-6</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Привод</div>
+                                            <div></div>
+                                            <div>Полный</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Расход</div>
+                                            <div></div>
+                                            <div>11,2 город / 6,2  трасса</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="d2" class="collapse" data-parent=".description">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 px-0">
+                                        <div class="description--row">
+                                            <div>Тип топлива</div>
+                                            <div></div>
+                                            <div>Бензин 95</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Двигатель</div>
+                                            <div></div>
+                                            <div>2 л / 150 л. с.</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Коробка</div>
+                                            <div></div>
+                                            <div>АКПП-6</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Привод</div>
+                                            <div></div>
+                                            <div>Полный</div>
+                                        </div>
+                                        <div class="description--row">
+                                            <div>Расход</div>
+                                            <div></div>
+                                            <div>11,2 город / 6,2  трасса</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script>
+    $('[data-inputmask]').inputmask();
+    $('#lightSlider').lightSlider({
+        gallery: true,
+        item: 1,
+        loop: true,
+        slideMargin: 0,
+        thumbItem: 4,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+
+                    item: 1,
+                    thumbItem: 3.5,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+
+                    item: 1,
+                    thumbItem: 3,
+                }
+            }
+        ]
+    });
+</script>
+<script>
+    $('.description a[data-toggle="collapse"]').on('click', function () {
+        if ($(this).attr('aria-expanded') === 'true') {
+            return false
+        }
+    })
+</script>
 </body>
 </html>
