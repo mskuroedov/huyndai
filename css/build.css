@@ -71,7 +71,8 @@ button {
   outline: none;
   width: 100%;
   color: #494949;
-  font-size: 15px; }
+  font-size: 15px;
+  font-weight: 100; }
   .form-input input:focus {
     border: 1px solid #ebebeb;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); }
@@ -177,7 +178,8 @@ button {
       .app .form-input {
         width: 30%; }
       .app .form-btn {
-        width: 30%; } }
+        width: 30%;
+        margin-bottom: 0; } }
   .app .label {
     font-size: 22px;
     color: #2f2f2f;
@@ -233,6 +235,9 @@ button {
 .description__item .description--row {
   display: flex;
   margin-bottom: 16px; }
+  @media (max-width: 767px) {
+    .description__item .description--row {
+      padding-right: 40px; } }
   .description__item .description--row div {
     font-size: 14px;
     line-height: 1.429;
@@ -389,7 +394,8 @@ button {
       .stock-item .description__price div:nth-of-type(2) {
         font-size: 14px;
         color: #6f828e;
-        line-height: 1.571; }
+        line-height: 1.571;
+        font-weight: 100; }
 
 .product-item {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
@@ -445,14 +451,16 @@ button {
             margin-top: -6px; }
           .product-item .description .characteristic__item .icon img {
             max-width: 100%; }
-        .product-item .description .characteristic__item .text div:first-of-type {
-          font-size: 13px;
-          color: #a9b2b8;
-          line-height: 1.692; }
-        .product-item .description .characteristic__item .text div:nth-of-type(2) {
-          font-size: 14px;
-          color: #283035;
-          line-height: 1.286; }
+        .product-item .description .characteristic__item .text div {
+          font-weight: 100; }
+          .product-item .description .characteristic__item .text div:first-of-type {
+            font-size: 13px;
+            color: #a9b2b8;
+            line-height: 1.692; }
+          .product-item .description .characteristic__item .text div:nth-of-type(2) {
+            font-size: 14px;
+            color: #283035;
+            line-height: 1.286; }
     .product-item .description__price {
       border-top: 1px solid #e9eced;
       padding-top: 21px;
@@ -466,13 +474,15 @@ button {
         line-height: 1;
         margin-bottom: 6px;
         font-size: 20px;
-        color: #2f2f2f; }
+        color: #2f2f2f;
+        font-weight: 100; }
         .product-item .description__price div:nth-of-type(1) span {
           font-weight: bold; }
       .product-item .description__price div:nth-of-type(2) {
         font-size: 14px;
         color: #6f828e;
-        line-height: 1.571; }
+        line-height: 1.571;
+        font-weight: 100; }
   .product-item .actions {
     height: 0;
     overflow: hidden;
