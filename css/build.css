@@ -305,7 +305,8 @@ button {
     line-height: 1;
     color: #a3aeb5;
     position: relative;
-    padding-right: 14px; }
+    padding-right: 14px;
+    font-weight: 100; }
     .breadcrumbs a:after {
       position: absolute;
       content: '';
