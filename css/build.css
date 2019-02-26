@@ -4164,7 +4164,7 @@ button {
           width: 104px; } }
 
 .product-section {
-  background: url("/assets/bg.png");
+  background: url("../assets/bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 69px;
@@ -4213,7 +4213,7 @@ button {
     .breadcrumbs a:after {
       position: absolute;
       content: '';
-      background: url("/assets/link-arrow.png");
+      background: url("../assets/link-arrow.png");
       width: 4px;
       height: 8px;
       right: 0;
